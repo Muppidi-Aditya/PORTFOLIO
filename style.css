@@ -1,0 +1,416 @@
+@import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Bricolage+Grotesque:opsz@10..48&family=Dancing+Script:wght@600&family=Fira+Sans&family=Handjet&family=Inconsolata&family=Kalam:wght@700&family=Kanit&family=Lato&family=Lexend+Peta:wght@300&family=Londrina+Outline&family=Londrina+Shadow&family=Montserrat&family=Mukta&family=Noto+Sans+JP&family=Open+Sans&family=Playfair+Display:wght@500&family=Preahvihear&family=REM&family=Raleway:wght@500&family=Roboto+Mono&family=Roboto+Slab&family=Rubik&family=Rubik+Iso&family=Source+Code+Pro&family=Ubuntu&family=Ysabeau+SC:wght@300&display=swap');
+
+*
+{
+    margin : 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    cursor :context-menu;
+    scroll-behavior: smooth;
+}
+@keyframes colors
+{
+    0%{
+        background-image : radial-gradient(rgba(230,28,173,1),white);
+        -webkit-box-shadow: 15px 5px 30px 135px rgb(255, 255, 255);
+        -moz-box-shadow: 15px 5px 300px 135px rgb(243, 235, 241);
+        box-shadow: 15px 5px 300px 100px rgb(179, 233, 241);
+    }
+
+    33%{
+        background-image : radial-gradient(rgba(230,28,173,1),white);
+        -webkit-box-shadow: 15px 5px 30px 135px rgb(255, 255, 255);
+        -moz-box-shadow: 15px 5px 300px 135px rgb(243, 235, 241);
+        box-shadow: 15px 5px 300px 100px rgb(241, 175, 251);
+    }
+
+    66%{
+        background-image : radial-gradient(rgba(230,28,173,1),white);
+        -webkit-box-shadow: 15px 5px 30px 135px rgb(255, 255, 255);
+        -moz-box-shadow: 15px 5px 300px 135px rgb(243, 235, 241);
+        box-shadow: 15px 5px 300px 100px rgb(253, 241, 161);
+    }
+
+    100%{
+        background-image : radial-gradient(rgba(230,28,173,1),white);
+        -webkit-box-shadow: 15px 5px 30px 135px rgb(255, 255, 255);
+        -moz-box-shadow: 15px 5px 300px 135px rgb(243, 235, 241);
+        box-shadow: 15px 5px 300px 100px rgb(179, 233, 241);
+    }
+}
+.cursor
+{
+    z-index : 999;
+    pointer-events: none;
+    height : 1px;
+    width : 1px;
+    position: absolute;
+    top : 0px;
+    left : 0px;
+    background-image : radial-gradient(rgba(230,28,173,1),white);
+    -webkit-box-shadow: 15px 5px 30px 135px rgb(255, 255, 255);
+    -moz-box-shadow: 15px 5px 300px 135px rgb(243, 235, 241);
+    box-shadow: 15px 5px 300px 100px rgb(178, 36, 36);
+    border-radius : 50%;
+    animation: colors 3s infinite;
+    mix-blend-mode: difference;
+}
+
+.myPhoto-Edit
+{
+    background-color: rgb(255, 255, 255);
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;  
+    position: absolute;   
+    top : 25vh;  
+    right : 20vw;  
+}
+
+.typewriter h1 
+{
+    overflow: hidden; 
+    border-right: .15em solid orange; 
+    white-space: nowrap; 
+    margin: 0 auto; 
+    letter-spacing: .15em; 
+    animation: 
+      typing 4.5s steps(40, end) infinite,
+      blink-caret .2s step-end infinite;
+    animation-direction: alternate;
+    position: absolute;
+    font-size : 20px;
+    margin-top : -30px;
+    font-weight : bold;
+    color : rgb(61, 61, 61);
+}
+  
+@keyframes typing {
+    from { width: 0 }
+    to { width: 345px; }
+}
+  
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+}
+
+.navBar-Edit ul li 
+{
+    list-style-type: none;
+    font-weight : bold;
+    font-size : 25px;
+    margin-right : 90px;
+    margin-top : 25px;
+    margin-bottom : 25px;
+    color : #5C8374;
+    font-weight : bold;
+    font-family: 'Montserrat', sans-serif;
+    transition: .5s;
+    letter-spacing: 3px;
+}
+
+.navBar-Edit ul li a
+{
+    cursor: pointer;
+}
+
+.navBar-Edit ul li:hover
+{
+    color : rgb(85, 194, 176);
+    font-size : 29px;
+}
+
+.p1-edit
+{
+    font-size : 30px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight : bold;
+    color : #93B1A6;
+}
+
+.p2-edit
+{
+    font-size : 100px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight : bold;
+    color : #93B1A6;
+    letter-spacing: 2px;
+    margin-top : -30px;
+}
+
+.shortTag
+{
+    position: absolute;
+    top : 90vh;
+    left : 3vw;
+    color : rgb(255, 236, 205);
+    font-weight : bold;
+    font-family: 'Roboto Mono', monospace;
+}
+
+
+.span2
+{
+    color : rgb(255, 212, 212);
+    letter-spacing: 2px;
+}
+
+.quote-edit
+{
+    background-color : white;
+    width : 70vw;
+    position: absolute;
+    top : 110vh;
+    height : 180px;
+    font-size : 30px;
+    padding-left : 30px;
+    padding-top: 40px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    font-weight : bold;
+    color : black;
+    font-weight : bold;
+    margin-top : 70px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.aboutName-edit
+{
+    color : grey;
+    font-size : 15px;
+}
+
+.aboutContent-edit
+{
+    color : grey;
+    font-size : 22px;
+}
+
+.aboutContent-edit span
+{
+    color : white;
+    font-style : italic;
+}
+
+.aboutEdit
+{
+    position: relative;
+    top : 50vh;
+    background-color: #1A1A1A;
+    padding-left : 200px;
+    font-family: 'Mukta', sans-serif;
+    padding-top : 80px;
+    padding-right: 250px;
+    padding-bottom: 50px;
+}
+
+.meEdit
+{
+    margin-left : 200px;
+}
+
+.scroll-edit
+{
+    position: relative;
+    top : 93vh;
+    left : 45vw;
+}
+
+.gifEdit
+{
+    height : 500px;
+    position: relative;
+    top : 25vh;
+    left : 6vw;
+    border-radius: 50% 50% 46% 54% / 44% 42% 58% 56%;
+}
+
+.skillsList
+{
+    font-family: 'Londrina Outline', cursive;
+    position: relative;
+    top : 30vh;
+    /* border-style : solid; */
+    left : 10%;
+    width : 40%;
+    height : 60%;
+}
+
+.skillsList h1
+{
+    font-size: 60px;
+    font-weight : bolder;
+    text-align : center;
+    color : rgb(135, 149, 125);
+    margin-bottom : 40px;
+}
+
+.skill-icon-edit
+{
+    font-size : 60px;
+    color : rgb(207, 157, 111);
+    margin-top : 30px;
+    height : 100px;
+    width : 100px;
+    text-align: center;
+    padding-top :21px;
+    border-radius: 50%;
+    background-color: rgb(119, 119, 119);
+    margin-left : 25px;
+}
+
+.codeLogo-edit
+{
+    height : 100px;
+    transform: rotateY(0deg);
+    transition: 1s;
+    width : 100px;
+    cursor: pointer;
+}
+
+.logo-container
+{
+    height : 100px;
+    width : 100px;
+    margin-top : 30px;
+    margin-left : 55px;
+}
+
+.logo-container:hover > .codeLogo-edit
+{
+    transform: rotateY(180deg);
+    height : 120px;
+    width : 120px;
+    margin-bottom : 20px;
+}
+
+.portfolioName-edit
+{
+    font-family: 'Londrina Outline', cursive;
+    font-size : 50px;
+    color : rgb(135, 149, 125);
+    position: relative;
+    top : 20vh;
+    margin-left : 10vw;
+    font-weight : bold;
+}
+
+.firstWebsite
+{
+    position: relative;
+    top : 25vh;
+    margin-left : 20vw;
+}
+
+.firstWebsite img 
+{
+    height : 300px;
+    border-radius : 20px;
+}
+
+.firstWebsite div h1
+{
+    color : rgb(191, 239, 176);
+    font-family: 'Rubik', sans-serif;
+    font-size : 35px;
+    margin-left : 70px;
+    width : 350px;
+    text-align: center;
+}
+
+.firstWebsite div p
+{
+    color : grey;
+    font-family: 'Rubik', sans-serif;
+    margin-left : 70px;
+    font-size : 18px;
+    width : 350px;
+    text-align: center;
+}
+
+.firstWebsite div div p
+{
+    width : 100px;
+    margin-left : 20px;
+    color :rgb(85, 194, 176);
+}
+
+.show div i
+{
+    font-size : 30px;
+    margin-left : -5px;
+    color : darkgray;
+}
+
+.contactImg
+{
+    position: relative;
+    margin-left : 15vw;
+}
+
+.contact-yourName
+{
+    color : white;
+    font-weight : bold;
+    font-family: 'Lato', sans-serif;
+    font-size : 20px;
+    margin-left : 20px;
+    margin-top : 30px;
+}
+
+.inputName-edit
+{
+    background-color :rgb(119, 119, 119);
+    border-radius : 10px;
+    border-width : 0px;
+    height : 40px;
+    margin-left : 20px;
+    color : white;
+    padding-left : 15px;
+    font-weight : bold;
+    font-family: 'Lato', sans-serif;
+}
+
+.inputName-edit::placeholder
+{
+    color : darkgray;
+    font-weight : bold;
+    font-family: 'Lato', sans-serif;
+}
+
+.contact
+{
+    position: relative;
+    width : 40%;
+    left :50vw;
+    top : -50vh;
+}
+
+.contactHead 
+{
+    position: relative;
+    top : -10vh;
+}
+
+.icons i 
+{
+    margin-left : 40px;
+    position: relative;
+    bottom : 10vh;
+    font-size : 35px;
+    cursor : pointer;
+    margin-top : -100px;
+    margin-right : 40px;
+}
+
+.sendMessage
+{
+    background-color :rgb(85, 194, 176);
+    height : 50px;
+    width : 150px;
+    margin-left : 20px;
+    margin-top : 20px;
+    border-radius : 10px;
+    border-width : 0px;
+    font-weight : bold;
+    color : rgb(28, 6, 6);
+}
